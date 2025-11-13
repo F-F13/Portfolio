@@ -1,8 +1,11 @@
 :root {
-    --main-color: #008080; /* Teal/Verde-azulado escuro */
-    --background-color: #e0f2f1; /* Fundo muito claro/quase branco */
+    --main-color: #008080;
+    /* Teal/Verde-azulado escuro */
+    --background-color: #e0f2f1;
+    /* Fundo muito claro/quase branco */
     --card-border-color: #008080;
-    --placeholder-color: #ccc; /* Cinza claro para o espaço da imagem */
+    --placeholder-color: #ccc;
+    /* Cinza claro para o espaço da imagem */
 }
 
 /* Reset Básico */
@@ -42,41 +45,25 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    gap: 70px; /* Espaço entre os cards */
-    max-width: 1200px;
+    gap: 70px;
+    /* Espaço entre os cards */
+    max-width: 1300px;
     width: 100%;
 }
 
-/* Estilo do Card Individual */
-.card {
+
+#card1 {
     background-color: white;
-    width: 45%; 
-    border: 5px solid var(--card-border-color); /* Borda externa verde-azulada */
+    width: 350%;
+    border: 5px solid var(--card-border-color);
+    /* Borda externa verde-azulada */
     border-radius: 5px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
 }
 
-#card1{
-    background-color: white;
-    width: 250%; 
-    border: 5px solid var(--card-border-color); /* Borda externa verde-azulada */
-    border-radius: 5px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
 
-#card2{
-    background-color: white;
-    width: 130%; 
-    border: 5px solid var(--card-border-color); /* Borda externa verde-azulada */
-    border-radius: 5px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
 
 /* Cabeçalho do Card (Autoria / Resolução de Problemas) */
 .card-header {
@@ -95,8 +82,10 @@ body {
 /* Wrapper da Imagem (Para aplicar o teal escuro ao redor da imagem) */
 .card-image-wrapper {
     background-color: var(--card-border-color);
-    padding: 30px; /* Espaçamento interno para criar a borda teal em volta da imagem */
-    flex-grow: 1; /* Permite que o wrapper ocupe o espaço restante */
+    padding: 30px;
+    /* Espaçamento interno para criar a borda teal em volta da imagem */
+    flex-grow: 1;
+    /* Permite que o wrapper ocupe o espaço restante */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +95,8 @@ body {
 .card-image-placeholder {
     width: 100%;
     height: 100%;
-    min-height: 350px; /* Altura mínima para o bloco ficar visível */
+    min-height: 350px;
+    /* Altura mínima para o bloco ficar visível */
     background-color: var(--placeholder-color);
     color: #666;
     display: flex;
@@ -146,6 +136,29 @@ body {
     }
 }
 
-.atv{
+.atv {
     border-radius: 5px;
+}
+
+#voltar {
+    position: fixed;
+    /* Fixa o botão na tela */
+    top: 20px;
+    /* Distância do topo */
+    left: 20px;
+    /* Distância da esquerda */
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#voltar:hover {
+    background-color: #006666;
+    /* tom mais escuro ao passar o mouse */
 }
