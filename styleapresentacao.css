@@ -1,4 +1,3 @@
-/* Paleta de Cores baseada na imagem */
 :root {
     --main-color: #008080; /* Teal/Verde-azulado escuro */
     --background-color: #e0f2f1; /* Fundo muito claro/quase branco */
@@ -43,15 +42,35 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Espaço entre os cards */
-    max-width: 1000px;
+    gap: 70px; /* Espaço entre os cards */
+    max-width: 1200px;
     width: 100%;
 }
 
 /* Estilo do Card Individual */
 .card {
     background-color: white;
-    width: 45%; /* Define a largura para 45% */
+    width: 45%; 
+    border: 5px solid var(--card-border-color); /* Borda externa verde-azulada */
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#card1{
+    background-color: white;
+    width: 250%; 
+    border: 5px solid var(--card-border-color); /* Borda externa verde-azulada */
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#card2{
+    background-color: white;
+    width: 130%; 
     border: 5px solid var(--card-border-color); /* Borda externa verde-azulada */
     border-radius: 5px;
     overflow: hidden;
@@ -76,8 +95,8 @@ body {
 /* Wrapper da Imagem (Para aplicar o teal escuro ao redor da imagem) */
 .card-image-wrapper {
     background-color: var(--card-border-color);
-    padding: 15px; /* Espaçamento interno para criar a borda teal em volta da imagem */
-    flex-grow: 2; /* Permite que o wrapper ocupe o espaço restante */
+    padding: 30px; /* Espaçamento interno para criar a borda teal em volta da imagem */
+    flex-grow: 1; /* Permite que o wrapper ocupe o espaço restante */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,8 +104,8 @@ body {
 
 /* Placeholder da Imagem (Onde ficaria a imagem real) */
 .card-image-placeholder {
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
     min-height: 350px; /* Altura mínima para o bloco ficar visível */
     background-color: var(--placeholder-color);
     color: #666;
@@ -129,6 +148,4 @@ body {
 
 .atv{
     border-radius: 5px;
-    width: 500px;
-    height: 600px;
 }
